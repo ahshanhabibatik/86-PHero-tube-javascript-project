@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phero-tube</title>
+
+    <!-- tailwind css and dasiUl link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- use google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/Logo.png" type="image/x-icon">
+
+
+    <style>
+        .inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+
+
+<body class="inter">
+    <header>
+        <nav class="p-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start ">
+                    <div class="">
+                        <img src="./image/Logo.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <button id="sort-button"
+                        class="bg-gray-200 ml-7 md:ml-0 lg:ml-0  px-2 py-1 lg:px-4 lg:py-2  rounded-lg hover:bg-red-500">Sort
+                        by
+                        view</button>
+                </div>
+                <div class="navbar-end">
+                    <button id="blog-button"
+                        class="bg-gray-200 px-2 py-1 lg:px-4 lg:py-2 rounded-lg hover:bg-red-500">Blog</button>
+                </div>
+            </div>
+        </nav>
+        <div class="mt-3 mb-3">
+            <hr>
+        </div>
+    </header>
+    <main>
+
+
+        <section>
+            <div id="button-container">
+
+            </div>
+
+        </section>
+
+        <section>
+            <div id="entertainment-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-7 p-4">
+
+
+            </div>
+        </section>
+
+        <section>
+            <div id="no-message-container" class="text-center mt-4">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

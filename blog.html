@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+    <article>
+        <h1 class="text-2xl font-semibold">Question: Discuss the scope of var, let, and const</h1>
+        <h1 class="font-bold">What is var?</h1>
+        <p>In JavaScript, var is a keyword used to declare variables. It was the primary way to
+            declare variables in
+            JavaScript prior to the introduction of let and const in ECMAScript 6 (ES6).</p>
+        <ul>
+            <h1 class="text-xl font-semibold">Var Scope:</h1>
+            <li>Variables declared with var have function scope or global scope, depending on where they are declared.
+            </li>
+            <li>If a variable is declared within a function using var, it is accessible within that function and any
+                nested
+                functions.</li>
+            <li>If a variable is declared outside of any function using var, it becomes a global variable and is
+                accessible
+                throughout the entire script.</li>
+        </ul>
+
+        <p class="text-xl font-extrabold">Example of Var</p>
+
+        <p>
+            var message = "Hello, World!"; <br>
+            console.log(message);
+        </p>
+    </article>
+
+    <!-- let -->
+    <article>
+        <h1 class="text-xl font-bold">What is let?</h1>
+        <p>In JavaScript, let is a keyword used to declare variables. It was introduced in ECMAScript 6 (ES6) and
+            provides a more modern and flexible way to declare variables compared to the older var keyword.</p>
+        <ul>
+            <h1 class="text-xl font-semibold">Let Scope:</h1>
+            <li>Block Scope: Variables declared with let are block-scoped. This means that their scope is limited to the
+                block (enclosed within curly braces) in which they are defined. This includes blocks within functions,
+                loops, and conditional statements.
+            </li>
+            <li>No Hoisting Issues: Unlike var, variables declared with let are not hoisted to the top of their
+                containing scope. They are only accessible after the point at which they are declared.</li>
+            <li>No Re-declaration: You cannot re-declare a variable with the same name within the same block scope.
+                Attempting to do so will result in a syntax error.</li>
+        </ul>
+
+        <p class="text-xl font-extrabold">Example of let</p>
+
+        <p>
+            function exampleFunction() { <br>
+            let message = "Hello, World!"; <br>
+            console.log(message);
+            }
+
+            exampleFunction();
+        </p>
+    </article>
+    <article>
+        <h1 class="text-xl font-bold">What is const?</h1>
+        <p class="justify-between">
+            In JavaScript, const is a keyword used to declare variables that have a constant, unchangeable value. Once a
+            variable is declared with const and assigned a value, that value cannot be reassigned or changed throughout
+            the program's execution.</p>
+        <ul>
+            <h1 class="font-bold">Const Scope:</h1>
+            <li>Constant Value: Variables declared with const are used for values that should not change. Once a value
+                is assigned to a const variable, it cannot be modified or reassigned.
+            </li>
+            <li>Block Scope: Like let, variables declared with const are block-scoped, which means their scope is
+                limited to the block (enclosed within curly braces) in which they are defined.</li>
+            <li>Must Be Assigned: When declaring a variable with const, you must assign a value to it at the time of
+                declaration. Unlike let, you cannot declare a const variable without initializing it.</li>
+            <li>No Re-assignment: Attempts to reassign a const variable will result in a syntax error.</li>
+        </ul>
+
+        <p class="text-xl font-extrabold">Example of const</p>
+
+        <p>
+            const pi = 3.14159; <br>
+            pi = 3.14; <br>
+
+            if (true) { <br>
+            const message = "Hello"; <br>
+            console.log(message); <br>
+            } <br>
+
+            console.log(message);
+        </p>
+    </article>
+
+    <article>
+        <h1 class="font-bold">Tell us the use cases of null and undefined</h1>
+        <p class="font-bold">1.null:</p>
+
+        <li>null is a deliberate value that represents the absence of any object or value.</li>
+        <li>It is often used when you want to explicitly indicate that a variable or object should have no value.</li>
+        <li>Initializing a variable before assigning it a meaningful value.</li>
+        <li>Clearing or resetting the value of a variable or object.</li>
+        <li>Checking for the absence of an object or value.</li>
+
+        <div>
+            <p class="font-bold">1.undefined</p>
+            <li>undefined represents a variable that has been declared but has not been assigned a value</li>
+            <li>It is also the default value of function parameters that are not provided with an argument.</li>
+            <li>Variables declared but not yet assigned a value.</li>
+            <li>Function parameters that have not been provided with arguments.</li>
+            <li>Variables or properties that do not exist.</li>
+        </div>
+    </article>
+
+    <article>
+        <h1 class="font-bold">What do you mean by rest API? </h1>
+        <p>A REST API (Representational State Transfer Application Programming Interface) in JavaScript refers to a web
+            service or endpoint that follows the principles of REST, a set of architectural constraints for designing
+            networked applications. JavaScript can be used to interact with REST APIs, making HTTP requests to retrieve
+            or send data between a client (typically a web browser or application) and a server.</p>
+
+        <p class="mt-4">Here's a breakdown of some key concepts related to REST APIs in JavaScript:</p>
+
+        <p><span class="font-bold">REST: </span>REST is an architectural style that defines a set of constraints for
+            creating web services. It relies on a stateless, client-server communication model where resources (such as
+            data objects) are represented as URLs, and HTTP methods (GET, POST, PUT, DELETE, etc.) are used to perform
+            CRUD (Create, Read, Update, Delete) operations on these resources.</p>
+
+        <p><span class="font-bold">API: </span>An API, or Application Programming Interface, is a set of rules and
+            protocols that allows different software applications to communicate with each other. In the context of web
+            development, an API typically refers to a set of endpoints on a web server that can be accessed by client
+            applications to perform various operations.</p>
+
+    </article>
+
+</body>
+
+</html>
